@@ -9,7 +9,7 @@ import Foundation
 import ArgumentParser
 
 
-typealias ArgumentEnum = ExpressibleByArgument & CaseIterable
+public typealias ArgumentEnum = ExpressibleByArgument & CaseIterable
 
 
 public let executableName = URL(fileURLWithPath: CommandLine.arguments.first!).lastPathComponent
