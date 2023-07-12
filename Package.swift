@@ -9,7 +9,7 @@ let package = Package(
 		.library(name: "CommandLineTool", targets: ["CommandLineTool"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/YourMJK/swift-argument-parser", branch: "main")
+		.package(url: "https://github.com/YourMJK/swift-argument-parser", from: "1.0.0")
 	],
 	targets: [
 		.target(
