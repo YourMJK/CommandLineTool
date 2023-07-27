@@ -9,3 +9,10 @@ import ArgumentParser
 
 
 public typealias ArgumentEnum = ExpressibleByArgument & CaseIterable
+
+
+extension CaseIterable where Self: RawRepresentable, RawValue == String {
+	public static var allCasesRegexString: String {
+		allCases.map(\.rawValue).joined(separator: " | ")
+	}
+}
