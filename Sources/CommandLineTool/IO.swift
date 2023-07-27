@@ -1,15 +1,11 @@
 //
-//  CommandLineTool.swift
+//  IO.swift
 //  CommandLineTool
 //
 //  Created by Max-Joseph on 24.10.18.
 //
 
 import Foundation
-import ArgumentParser
-
-
-public typealias ArgumentEnum = ExpressibleByArgument & CaseIterable
 
 
 public let executableName = URL(fileURLWithPath: CommandLine.arguments.first!).lastPathComponent
