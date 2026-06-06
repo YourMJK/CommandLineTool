@@ -2,7 +2,7 @@
 //  Enums.swift
 //  CommandLineTool
 //
-//  Created by Max-Joseph on 27.07.23.
+//  Created by YourMJK on 27.07.23.
 //
 
 import ArgumentParser

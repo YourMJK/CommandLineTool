@@ -2,7 +2,7 @@
 //  IO.swift
 //  CommandLineTool
 //
-//  Created by Max-Joseph on 24.10.18.
+//  Created by YourMJK on 24.10.18.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import Foundation
 public let executableName = URL(fileURLWithPath: CommandLine.arguments.first!).lastPathComponent
 
 
-extension FileHandle: TextOutputStream {
+extension FileHandle: @retroactive TextOutputStream {
 	public func write(_ string: String) {
 		guard let data = string.data(using: .utf8) else { return }
 		self.write(data)
